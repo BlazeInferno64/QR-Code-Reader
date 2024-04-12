@@ -20,7 +20,7 @@ const readFile = (file) => {
 }
 
 const fetchFile = (file, formData) => {
-    let link = 'http://api.qrserver.com/v1/read-qr-code/';
+    let link = 'httpS://api.qrserver.com/v1/read-qr-code/';
     
     fetch(link, {
         method: "POST", body: formData
