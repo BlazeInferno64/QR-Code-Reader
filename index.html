@@ -2,48 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="theme-color" content="black">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blaze Qr Code Scanner & Reader | Scan & Read unlimited Qr Codes For Free!</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>QR CODE READER | Read QR Codes directly in your browser safely for 100% free</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
     <link rel="icon" href="https://avatars.githubusercontent.com/u/96913755?v=4" type="image/x-icon"/>
     <script src="https://kit.fontawesome.com/f3220d5256.js" crossorigin="anonymous"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2604597246009301"
     crossorigin="anonymous"></script>
 </head>
 <body>
-    <input type="file" name="Qr-Code" accept="image/*" id="file" hidden />
-    <div class="app-card">
-        <div class="upload-box">
-            <p>
-                Click here to select Qr Code for scanning!
-            </p>
-        </div>
-        <div class="app hide height">
-            <div class="app-head">
+    <input type="file" name="QR-Code-Image" accept="image/*" id="file" hidden/>
+    <div class="upload-bg hide">
+        <div class="upload-card hide down">
+            <div class="upload-head">
                 <p>
-                    You Uploaded -
+                    Upload QR Code
                 </p>
             </div>
-            <div class="app-banner">
-                <img src="#" alt="Qr-Code Image" class="img"/>
+            <div class="wel">
+                <p>
+                    Click on the button below to upload QR Code for Scanning
+                </p>
             </div>
-            <div class="app-result">
-                <div class="info">
-                    <p>
-                        The Qr Code Says -
-                    </p>
-                </div>
-                <div class="output">
-                    <textarea name="result" readonly id="qr" class="text" placeholder="The Qr Code Says..."></textarea>
-                </div>
+            <button class="upload">
+                <i class="fa fa-cloud-upload"></i>  Browse QR Codes
+            </button>
+        </div>
+    </div>
+    <div class="app">
+        <div class="app-head">
+            <p>
+                QR Code Reader
+            </p>
+        </div>
+        <div class="app-body">
+            <div class="text">
+                Your QR Code:
             </div>
-            <div class="app-opt">
-                <button class="close">Close</button>
-                <button class="copy">Copy</button>
+            <div class="banner">
+                <img class="img" src="" alt="QR-Code-Image">
+            </div>
+            <div class="info">
+                <label for="QR-Code">
+                    The QR Code says:
+                </label>
+                <div class="qc no-click" id="QR-Code" contenteditable="true"><div class="plce">Upload a QR Code first...</div></div>
+            </div>
+            <div class="btns">
+                <button class="change none">
+                    <i class="fa fa-cloud-upload"></i>  Upload another
+                </button>
+                <button class="copy none">
+                    <i class="fa fa-clone"></i>  Copy Text
+                </button>
             </div>
         </div>
     </div>
-    <script defer src="./js/script.js"></script>
+    <script defer src="./public/js/ui.js"></script>
+    <script defer src="./public/js/script.js"></script>
 </body>
 </html>
