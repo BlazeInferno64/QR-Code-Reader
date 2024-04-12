@@ -1,5 +1,6 @@
 # QR-Code-Reader
-QR Code Reader is a simple yet handy tool for reading/scanning QR Codes safely for free. Unlimited QR Codes scanning!
+A free open source QR Code Reader directly accessible from your browser!
+|------|
 
 # View it live here
 
